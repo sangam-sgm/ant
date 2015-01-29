@@ -1900,6 +1900,9 @@ see ${build.junit.reports} / ${antunit.reports}
         </fileset>
       </batchtest>
     </test-junit>
+  </target>
+
+  <target name="junit-batch-with-failure" depends="junit-batch">
     <fail if="junit.failed"/>
   </target>
 
